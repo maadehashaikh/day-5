@@ -1,0 +1,31 @@
+form handling and working with forms 
+handle backend process of forms and making sure that the data coming from any frontend , library , framework and templating engines 
+
+npm i cookie-parser => we've installed this package 
+
+session and cookie ? 
+jaisy he hmny for example instagram ko khola and log in kia ab server bhool jata h kay who logged this woh hmy bhool jata h to ab mai image ko jaisy he like karti hon woh mujhsy dobara say poochta h kay who you are ? and apny phr say log in kia and kia user har action p ab server ko yeh batay ga kay who am I ? so this is a very hectic type of process jo koi bh user nh chahta h and na he koi bh app yeh chahti h kay aisay ho so that we study and session 
+
+hm log kuch bh data frontend p browser p rakh skty hain and ap jab bh kcuh bh request bhejty hain backend p so that woh frontend p saved data automatically backend p chala jay ga .
+
+login kay bad aik aise string share kardyna jo kay forntend p matlb browser p save ho jay jab bh user koi action perform karay server ko jo bh request jay ge woh is saved string kay sath he jay ge and server ab ki bar apsay nh poochy ga kay woh you are ! 
+
+(request + saved string)(goes to server)=> now server will recognise on basis of saved string that it's you 
+
+so saved string ko we call cookie in simple words 
+cookie ki basis p server say connect hain is connection ko server say we says session 
+
+boht ziada authentication mai it use (session and cookie)
+
+UNDERSTANDING THESE TWO LINES :
+
+app.use(express.json());
+app.use(express.urlencoded({extended : true}))
+
+jab hm form mai kisi bh website wagera kay apna name age email and much more likhty hain so hota kia h kay yeh plain text mai jaisy hmny likha hota h waisy nh jata h but actually aisa nh hota h data server p jany say pehly hota yeh h kay woh plain text kay format say change ho kar woh blob mai convert ho jata h so that woh data jab bh backend mai jata h to woh aik stream mai hota h is ka matlb h kay user ki information and browser ki sari information sab kuch mixed up hay and woh sab mixed he server p jay ga called (blob)
+blob mai sab h or woh readable nh h that's all 
+
+we send info but server ko blob mila 
+blob ko ab readable form mai kaisy lana h ? woh readable bnana h us kay liyay we write these both lines 
+blob aik correct form nh h (blob binary form mai kha jata h)
+
